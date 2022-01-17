@@ -1,11 +1,13 @@
 function getMinNum(a,b,c){
-   if (a<b && a<c){
-       alert("min is -" + a);
-   } else if (b<a && b<c){
-       alert("min is -" + b);
-   } else {
-       alert("min is -" + c);
-   }
+   if (a<b){
+       if (a<c){
+           alert("min là -" + a);
+       } else {
+           alert("min là -" + c);
+       }
+   } else if (b<c){
+       alert("min là -" + b);
+   } else alert("min là -" + c )
 }
 let inputN1= +prompt("Enter first number")
 let inputN2= +prompt("Enter second number")
